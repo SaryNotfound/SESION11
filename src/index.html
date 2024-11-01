@@ -17,7 +17,7 @@
                 Ingrese una calificación entre 0 y 100
             </p>
 
-              <input id="numero1" type="number" placeholder="numero 1" required minlength="0" maxlength="100">
+              <input id="numero1" type="number" placeholder="numero" required minlength="0" maxlength="100">
               <button onclick="Calcular()"> Calcular </button> 
               <br>
               Resultado: <span id = "Resultado"></span>
@@ -58,16 +58,27 @@
               <input id="numero1" type="number" placeholder="numero" >
               <button onclick="Calcular()"> Calcular </button> 
               <br>
-              Resultado: <span id = "Resultado"></span>
+              Resultado: <span id = "Resultado2"></span>
         </div>
 
         <script>
-            
+            function Calcular() {
+                let num1=document.getElementById("numero1").value;
 
+                if (num1/2 ==0) {
+                    document.getElementById ("Resultado2").innerText = "El numero es par";
+                    } 
 
+                else {
+                    document.getElementById ("Resultado2").innerText = "El numero es impar";
+                }
 
-
+            }
+        
         </script>
+
+
+        <p>corredir el resultado impar sale par</p>
 
 
 
