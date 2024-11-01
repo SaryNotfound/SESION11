@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 11</title>
+</head>
+<body>
+      <center>
+        <h1>
+            CALIFICACIONES
+        </h1>
+        </center>
+
+        <div>
+            <p>
+                Ingrese una calificación entre 0 y 100
+            </p>
+
+              <input id="numero1" type="number" placeholder="numero 1" required minlength="0" maxlength="100">
+              <button onclick="Calcular()"> Calcular </button> 
+              <br>
+              Resultado: <span id = "Resultado"></span>
+        </div>
+     
+     
+
+    <script>
+        function Calcular() {
+            let num1=document.getElementById("numero1").value;
+
+            if (num1 >= 90) {
+             document.getElementById ("Resultado").innerText = "Aprobado con honores";
+
+            } 
+            else if( num1 >=70 & num1 <90 ) {
+                document.getElementById ("Resultado").innerText = "Aprobado";
+            }
+            else if (num1<70) {
+                document.getElementById ("Resultado").innerText = "Reprobado";
+            }
+        }
+
+    </script>
+
+        <center>
+            <br>
+            <h1>
+               PAR O IMPAR
+            </h1>
+        </center>
+       
+        <div>
+            <p>
+                Ingrese un numero 
+            </p>
+
+              <input id="numero1" type="number" placeholder="numero" >
+              <button onclick="Calcular()"> Calcular </button> 
+              <br>
+              Resultado: <span id = "Resultado"></span>
+        </div>
+
+        <script>
+            
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
